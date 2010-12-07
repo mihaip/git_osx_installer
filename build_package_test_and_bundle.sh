@@ -12,7 +12,7 @@ IMAGE_FILENAME="git-$GIT_VERSION-intel-leopard.dmg"
 echo $PACKAGE_NAME | pbcopy
 echo "Git version is $GIT_VERSION"
 
-mkdir Disk\ Image
+mkdir Disk\ Image 2> /dev/null
 /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker --doc Git\ Installer.pmdoc/ -o Disk\ Image/git-$GIT_VERSION-intel-leopard.pkg --title "Git $GIT_VERSION"
 
 echo "Testing the installer..."
